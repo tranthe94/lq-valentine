@@ -1,0 +1,35 @@
+note
+Update file style.css trong css
+Update file script.js trong js
+thêm phần này vào trong <header></header> trước thẻ đóng của <div class="header-right">
+<div class="list-history">
+  <ul>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+    <li>
+      <a><span>Nguyen Minh Tris</span> <span>Quà ABC</span> </a>
+    </li>
+  </ul>
+</div>
