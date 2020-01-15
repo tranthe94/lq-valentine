@@ -30,6 +30,7 @@ img{
 }
 a,a:hover{
   text-decoration: none;
+  cursor: pointer;
 }
 /* page loading */
 #loader {
@@ -44,12 +45,21 @@ a,a:hover{
   z-index: 999999;
   
 }
-#loader img{
+#loader .loader-container{
   position: absolute;
   top: 40%;
   left: 0px;
-  -webkit-animation: surfing 4s linear infinite;
-  animation: surfing 4s linear infinite;
+  width: 100%;
+}
+#loader .loader-container p{
+  text-align: center;
+  margin-top: 1%;
+  font-size: 2vw;
+}
+#loader .loader-container img{
+  position: relative;
+  -webkit-animation: surfing 5s linear infinite;
+  animation: surfing 5s linear infinite;
 }
 @-webkit-keyframes surfing {
   0% { left: 0%; }
@@ -138,6 +148,19 @@ a,a:hover{
   text-align: center;
   cursor: pointer;
 }
+.popup-btn span a{
+  color: #fff;
+  display: block;
+}
+.popup-btn-2-col{
+  flex-flow: initial;
+  justify-content: center;
+  align-items: flex-start;
+}
+.popup-btn-2-col.popup-btn span{
+  width: 35%;
+  margin: 0px 2%;
+}
 .popup-container-content{
   height: 52.2%;
   position: absolute;
@@ -153,6 +176,11 @@ a,a:hover{
   height: 90%;
   overflow: auto;
   padding-right: 0.5vw;
+  text-align: center;
+}
+.popup-detail-tha-thinh img{
+  max-width: 47.66%;
+  margin-bottom: 3%;
 }
 .close-popup{
   position: absolute;
@@ -1091,16 +1119,23 @@ main{
   top: 0px;
   z-index: -1;
 }
-.bg-point-bar::after{
+.point-bar::after{
   content: "";
   position: absolute;
   height: 100%;
   background-repeat: no-repeat;
+  width: 1px;
+  background:#fff;
+  right: 25%;
+  top: 0px;
+  z-index: 8;
+}
+.point-tim{
+  position: absolute;
   width: 1.61vw;
-  background-image: url('../images/icons/tim-diem.png');
-  background-size: 100% auto;
-  right: -0.85vw;
-  top: -30%;
+  right: calc(25% - 0.85vw);
+  top: -40%;
+  z-index: 9;
 }
 .question-answer{
   width: 44.47vw;
@@ -1174,7 +1209,7 @@ main{
   float: right;
   margin-bottom: 2%;
   width: 4vw;
-  z-index: 999;
+  z-index: 800;
   cursor: pointer;
   position: relative;
   color: #000;
@@ -1287,6 +1322,11 @@ main{
     background-attachment: fixed;
     height: 100%;
     background-position: top;
+  }
+  #loader .loader-container p{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 4vw;
   }
   /* header */
   .header-des{
@@ -1567,9 +1607,9 @@ main{
     font-size: 3.2vw;
     margin-top: 5%;
   }
-  .bg-point-bar::after{
+  .point-tim{
     width: 4.8vw;
-    right: -2.4vw;
+    right: calc(25% - 2.4vw);
   }
   .question-answer{
     width: 90%;
@@ -1607,7 +1647,7 @@ main{
   }
   .popup-title h3{
     font-size: 5.33vw;
-    line-height: 6vw;
+    line-height: 9vw;
   }
   .popup-btn span{
     padding:2% 0px;
@@ -1617,5 +1657,8 @@ main{
   }
   .icon-bang{
     font-size: 5.3vw;
+  }
+  .answer-container-list .answer-item span{
+    font-size: 3.6vw;
   }
 }

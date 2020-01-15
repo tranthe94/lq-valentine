@@ -55,11 +55,12 @@
   <div id="menu">
     <img src="./images/icons/icon-close-menu.png" alt="icon-close-menu" class="close-menu">
     <ul class="list-menu">
-      <li><a href="#">Đổi quà</a></li>
-      <li><a href="#">Nhiệm vụ</a></li>
+      <li><a data-toggle="modal" data-target="#popup-doi-qua">Đổi quà</a></li>
+      <li><a data-toggle="modal" data-target="#popup-nhiem-vu">Nhiệm vụ</a></li>
       <li><a href="./thanh-tuu.html">Thành tích của bạn</a></li>
       <li><a data-toggle="modal" data-target="#popup-the-le">Thể lệ</a></li>
     </ul>
+    <!-- popup thể lệ -->
     <div class="modal fade" tabindex="-1" role="dialog" id="popup-the-le">
       <div class="modal-dialog popup-container" role="document">
         <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
@@ -106,6 +107,171 @@
         </div>
       </div>
     </div>
+    <!-- end popup thể lệ -->
+    <!-- popup nhiệm vụ nhận thính -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="popup-nhiem-vu">
+      <div class="modal-dialog popup-container" role="document">
+        <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
+        <div class="popup-content">
+          <div class="popup-title">
+            <h3>Nhiệm vụ</h3>
+            <img src="./images/line-popup.png" alt="line-popup">
+          </div>
+          <div class="popup-container-content">
+            <div class="popup-detail-content">
+              <div class="list-nhiem-vu">
+                <div class="nhiem-vu-item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <span class="active">Đã hoàn thành</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ádfhjsdklhkdfjljg;gjdfjg</p>
+                  <span>Chưa xong</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Quis ipsum suspendisse ultrices gravida.</p>
+                  <span class="active">Đã hoàn thành</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span class="active">Đã hoàn thành</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span class="active">Đã hoàn thành</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span>Chưa xong</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span>Chưa xong</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span>Chưa xong</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span>Chưa xong</span>
+                </div>
+                <div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span>Chưa xong</span>
+                </div><div class="nhiem-vu-item">
+                  <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                  <span>Chưa xong</span>
+                </div>
+              </div>      
+            </div>
+          </div>
+          <div class="popup-btn">
+            <span data-dismiss="modal">Vào game ngay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup nhiệm vụ nhận thính -->
+    <!-- popup đổi quà -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="popup-doi-qua">
+      <div class="modal-dialog popup-container" role="document">
+        <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
+        <div class="popup-content">
+          <div class="popup-title">
+            <h3>Đổi quà</h3>
+            <img src="./images/line-popup.png" alt="line-popup">
+          </div>
+          <div class="popup-container-content">
+            <div class="popup-detail-content">
+              <div class="doi-ve-quay">
+                <div class="icon-2-nv-bat-ky">
+                  <img src="./images/2-the-bat-ky.png" alt="2-the-bat-ky">
+                  <p>2 N.vật bất kỳ</p>
+                </div>
+                <div class="icon-bang">=</div>
+                <div class="icon-ve-quay">
+                  <img src="./images/ve-quay.png" alt="ve-quay">
+                  <p>Vé quay</p>
+                </div>
+                <div class="btn-nhan">
+                  <p class="active" data-toggle="modal" data-target="#popup-chuc-mung-doi-qua">Nhận</p>
+                </div>
+              </div>
+              <div class="doi-ve-quay">
+                <div class="icon-2-nv-bat-ky">
+                  <img src="./images/4-the-bat-ky.png" alt="2-the-bat-ky">
+                  <p>4 N.vật bất kỳ</p>
+                </div>
+                <div class="icon-bang">=</div>
+                <div class="icon-ve-quay">
+                  <img src="./images/ve-quay.png" alt="ve-quay">
+                  <p>Vé quay</p>
+                </div>
+                <div class="btn-nhan">
+                  <p class="">Đã nhận</p>
+                </div>
+              </div>
+              <div class="doi-trang-phuc">
+                <div class="icon-nv-chon">
+                  <img src="./images/the-nv-1.png" alt="the-nv-1">
+                  <p>Hayate Ngân Lang</p>
+                </div>
+                <div class="icon-nv-chon">
+                  <img src="./images/the-nv-2.png" alt="the-nv-1">
+                  <p>Airi <br/> Mị Hồ</p>
+                </div>
+                <div class="icon-bang">+</div>
+                <div class="icon-5-nv-bat-ky">
+                  <img src="./images/5-the-bat-ky.png" alt="5-the-bat-ky">
+                  <p>5 N.vật bất kỳ</p>
+                </div>
+                <div class="icon-bang">=</div>
+                <div class="icon-doi-trang-phuc">
+                  <img src="./images/hop-chon-trang-phuc.png" alt="hop-chon-trang-phuc">
+                  <p>Trang phục tùy chọn</p>
+                </div>
+                <div class="btn-nhan">
+                  <p class="">Nhận</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="popup-btn">
+            <span data-dismiss="modal">Vào game ngay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đổi quà -->
+    <!-- popup chúc mừng đổi quà -->
+    <div class="modal" tabindex="-1" role="dialog" id="popup-chuc-mung-doi-qua">
+      <div class="modal-dialog popup-container" role="document">
+        <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
+        <div class="popup-content">
+          <div class="popup-title">
+            <h3>Chúc mừng</h3>
+            <img src="./images/line-popup.png" alt="line-popup">
+          </div>
+          <div class="popup-container-content">
+            <div class="popup-detail-content">
+              <img src="./images/img-chuc-mung-nhan-qua.png" alt="chuc-mung-nhan-qua" class="chuc-mung-nhan-qua">
+              <p>
+                Đổi quà thành công.
+              </p>
+              <p>
+                Quà tặng sẽ được gửi về hòm thư trong vòng 24h
+              </p>
+            </div>
+          </div>
+          <div class="popup-btn">
+            <span data-dismiss="modal">Xác nhận</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup chúc mừng đổi quà -->
     <div class="partner">
       <img src="./images/partner.png" alt="partner" class="img-partner">
     </div>
@@ -132,101 +298,6 @@
         </div>
         <div class="btn-nhan-qua wow fadeInRight">
           <img src="./images/btn-nhan-qua.png" alt="btn-nhan-qua" class="btn-img-nhan-quan" data-toggle="modal" data-target="#popup-doi-qua">
-        </div>
-      </div>
-      <div class="modal fade" tabindex="-1" role="dialog" id="popup-doi-qua">
-        <div class="modal-dialog popup-container" role="document">
-          <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
-          <div class="popup-content">
-            <div class="popup-title">
-              <h3>Đổi quà</h3>
-              <img src="./images/line-popup.png" alt="line-popup">
-            </div>
-            <div class="popup-container-content">
-              <div class="popup-detail-content">
-                <div class="doi-ve-quay">
-                  <div class="icon-2-nv-bat-ky">
-                    <img src="./images/2-the-bat-ky.png" alt="2-the-bat-ky">
-                    <p>2 N.vật bất kỳ</p>
-                  </div>
-                  <div class="icon-bang">=</div>
-                  <div class="icon-ve-quay">
-                    <img src="./images/ve-quay.png" alt="ve-quay">
-                    <p>Vé quay</p>
-                  </div>
-                  <div class="btn-nhan">
-                    <p class="active" data-toggle="modal" data-target="#popup-chuc-mung-doi-qua">Nhận</p>
-                  </div>
-                </div>
-                <div class="doi-ve-quay">
-                  <div class="icon-2-nv-bat-ky">
-                    <img src="./images/4-the-bat-ky.png" alt="2-the-bat-ky">
-                    <p>4 N.vật bất kỳ</p>
-                  </div>
-                  <div class="icon-bang">=</div>
-                  <div class="icon-ve-quay">
-                    <img src="./images/ve-quay.png" alt="ve-quay">
-                    <p>Vé quay</p>
-                  </div>
-                  <div class="btn-nhan">
-                    <p class="">Đã nhận</p>
-                  </div>
-                </div>
-                <div class="doi-trang-phuc">
-                  <div class="icon-nv-chon">
-                    <img src="./images/the-nv-1.png" alt="the-nv-1">
-                    <p>Hayate Ngân Lang</p>
-                  </div>
-                  <div class="icon-nv-chon">
-                    <img src="./images/the-nv-2.png" alt="the-nv-1">
-                    <p>Airi <br/> Mị Hồ</p>
-                  </div>
-                  <div class="icon-bang">+</div>
-                  <div class="icon-5-nv-bat-ky">
-                    <img src="./images/5-the-bat-ky.png" alt="5-the-bat-ky">
-                    <p>5 N.vật bất kỳ</p>
-                  </div>
-                  <div class="icon-bang">=</div>
-                  <div class="icon-doi-trang-phuc">
-                    <img src="./images/hop-chon-trang-phuc.png" alt="hop-chon-trang-phuc">
-                    <p>Trang phục tùy chọn</p>
-                  </div>
-                  <div class="btn-nhan">
-                    <p class="">Nhận</p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="popup-btn">
-              <span data-dismiss="modal">Vào game ngay</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal" tabindex="-1" role="dialog" id="popup-chuc-mung-doi-qua">
-        <div class="modal-dialog popup-container" role="document">
-          <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
-          <div class="popup-content">
-            <div class="popup-title">
-              <h3>Chúc mừng</h3>
-              <img src="./images/line-popup.png" alt="line-popup">
-            </div>
-            <div class="popup-container-content">
-              <div class="popup-detail-content">
-                <img src="./images/img-chuc-mung-nhan-qua.png" alt="chuc-mung-nhan-qua" class="chuc-mung-nhan-qua">
-                <p>
-                  Đổi quà thành công.
-                </p>
-                <p>
-                  Quà tặng sẽ được gửi về hòm thư trong vòng 24h
-                </p>
-              </div>
-            </div>
-            <div class="popup-btn">
-              <span data-dismiss="modal">Xác nhận</span>
-            </div>
-          </div>
         </div>
       </div>
       <div class="main-center-container">
@@ -273,69 +344,6 @@
           <div class="btn-nv-custom btn-nhiem-vu-nhan-thinh wow fadeInUp" data-toggle="modal" data-target="#popup-nhiem-vu">
             Nhiệm vụ nhận thính
           </div>
-          <div class="modal fade" tabindex="-1" role="dialog" id="popup-nhiem-vu">
-            <div class="modal-dialog popup-container" role="document">
-              <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
-              <div class="popup-content">
-                <div class="popup-title">
-                  <h3>Nhiệm vụ</h3>
-                  <img src="./images/line-popup.png" alt="line-popup">
-                </div>
-                <div class="popup-container-content">
-                  <div class="popup-detail-content">
-                    <div class="list-nhiem-vu">
-                      <div class="nhiem-vu-item">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        <span class="active">Đã hoàn thành</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ádfhjsdklhkdfjljg;gjdfjg</p>
-                        <span>Chưa xong</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Quis ipsum suspendisse ultrices gravida.</p>
-                        <span class="active">Đã hoàn thành</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span class="active">Đã hoàn thành</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span class="active">Đã hoàn thành</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span>Chưa xong</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span>Chưa xong</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span>Chưa xong</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span>Chưa xong</span>
-                      </div>
-                      <div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span>Chưa xong</span>
-                      </div><div class="nhiem-vu-item">
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                        <span>Chưa xong</span>
-                      </div>
-                    </div>      
-                  </div>
-                </div>
-                <div class="popup-btn">
-                  <span data-dismiss="modal">Vào game ngay</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -346,6 +354,8 @@
       </div>
     </div>
   </main>
+  <!-- popup chúc mừng -->
+  
   <div class="bg-overlay"></div>
   <script src="./js/wow.min.js"></script>
   <script>
