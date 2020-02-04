@@ -362,14 +362,16 @@
   <div class="modal" tabindex="-1" role="dialog" id="popup-chuc-mung-tha-thinh">
     <div class="modal-dialog popup-container" role="document">
       <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
-      <div class="popup-content">
+      <div class="popup-content popup-cau-hoi-tha-thinh">
+        <div class="popup-img-chia-buon">
+          <img src="./images/yena-chuc-mung.png" alt="">
+        </div>
         <div class="popup-title">
           <h3>Chúc mừng</h3>
           <img src="./images/line-popup.png" alt="line-popup">
         </div>
         <div class="popup-container-content">
           <div class="popup-detail-content popup-detail-tha-thinh">
-            <img src="./images/img-cm-tha-thinh.jpg" alt="img-cm-tha-thinh" class="img-cm-tha-thinh">
             <p>
               Bạn đã kết đôi với Airi Kiemono
             </p>
@@ -390,14 +392,16 @@
   <div class="modal" tabindex="-1" role="dialog" id="popup-chi-buon-tha-thinh">
     <div class="modal-dialog popup-container" role="document">
       <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
-      <div class="popup-content">
+      <div class="popup-content popup-cau-hoi-tha-thinh">
+        <div class="popup-img-chia-buon">
+          <img src="./images/yena-chia-buon.png" alt="">
+        </div>
         <div class="popup-title">
           <h3>Chia buồn</h3>
           <img src="./images/line-popup.png" alt="line-popup">
         </div>
         <div class="popup-container-content">
           <div class="popup-detail-content popup-detail-tha-thinh">
-            <img src="./images/img-cm-tha-thinh.jpg" alt="img-cm-tha-thinh" class="img-cm-tha-thinh">
             <p>
               Bạn đã lỡ hẹn với Airi Kiemono
             </p>
@@ -409,6 +413,30 @@
         <div class="popup-btn popup-btn-2-col">
           <span><a href="thanh-tuu.html">Thành tích</a></span>
           <span data-toggle="modal" data-target="#popup-nhiem-vu">Nhiệm vụ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end popup Chia buồn thả thính -->
+  <!-- popup thông tin cá nhân -->
+  <div class="modal" tabindex="-1" role="dialog" id="popup-thong-tin-ca-nhan">
+    <div class="modal-dialog popup-container" role="document">
+      <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
+      <div class="popup-content">
+        <div class="popup-title">
+          <h3>Điền thông tin</h3>
+          <img src="./images/line-popup.png" alt="line-popup">
+        </div>
+        <div class="popup-container-content">
+          <div class="popup-detail-content">
+            <input class="input-thong-tin" type="text" placeholder="Họ tên ...">
+            <input class="input-thong-tin" type="text" placeholder="Số điện thoại ...">
+            <input class="input-thong-tin" type="text" placeholder="Email ...">
+            <input class="input-thong-tin" type="text" placeholder="Địa chỉ ...">
+          </div>
+        </div>
+        <div class="popup-btn popup-btn-2-col">
+          <span data-dismiss="modal">Xác nhận</span>
         </div>
       </div>
     </div>
@@ -458,7 +486,9 @@
       }
     });
     $('#popup-chuc-mung-tha-thinh').modal('show');
-    $('#popup-chi-buon-tha-thinh').modal('show')
+    $('#popup-chi-buon-tha-thinh').modal('show');
+    $('#popup-thong-tin-ca-nhan').modal('show');
+    
    </script>
   <script src="./js/script.js"></script>
 </body>
