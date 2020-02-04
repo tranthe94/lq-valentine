@@ -178,6 +178,9 @@ a,a:hover{
   padding-right: 0.5vw;
   text-align: center;
 }
+#popup-the-le .popup-detail-content{
+  text-align: justify;
+}
 .popup-detail-tha-thinh img{
   max-width: 47.66%;
   margin-bottom: 3%;
@@ -1330,7 +1333,6 @@ main{
   flex-wrap: wrap;
   text-align: left;
   align-items: center;
-  background: linear-gradient( #ec82ff , #cd33d9);
   border-radius: 5px;
   margin-top: 5%;
 }
@@ -1352,12 +1354,27 @@ main{
   width: 66.31%;
   text-align: left;
   align-items: center;
-  background: linear-gradient( #b1effe , #15bcfb);
   padding: 0px 2%;
   border-radius: 5px;
   margin-top: 3%;
   position: relative;
 }
+/* tùy chỉnh màu nền câu hỏi  chọn tướng nam nữ   */
+/* chon tuong nam */
+.question-male .question{
+  background: linear-gradient( #b1effe , #15bcfb);
+}
+.question-male .answer{
+  background: linear-gradient( #ec82ff , #cd33d9);
+}
+/* chon tuong nữ */
+.question-male .question{
+  background: linear-gradient( #ec82ff , #cd33d9);
+}
+.question-male .answer{
+  background: linear-gradient( #b1effe , #15bcfb);
+}
+/* end  tùy chỉnh màu nền câu hỏi  chọn tướng nam nữ */
 .answer-content{
   width: 100%;
   display: flex;
