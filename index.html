@@ -252,7 +252,7 @@
                   <p>Trang phục tùy chọn</p>
                 </div>
                 <div class="btn-nhan">
-                  <p class="">Nhận</p>
+                  <p class="active" data-toggle="modal" data-target="#popup-qua-dac-biet">Nhận</p>
                 </div>
               </div>
               
@@ -265,6 +265,56 @@
       </div>
     </div>
     <!-- end popup đổi quà -->
+    <!-- doi qua dac biet -->
+    <div class="modal" tabindex="-1" role="dialog" id="popup-qua-dac-biet">
+      <div class="modal-dialog popup-container" role="document">
+        <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
+        <div class="popup-content">
+          <div class="popup-title">
+            <h3>Chọn 1/5 tướng free</h3>
+            <img src="./images/line-popup.png" alt="line-popup">
+          </div>
+          <div class="popup-container-content">
+            <div class="popup-detail-content">
+              <div class="list-tuong-dac-biet">
+                <div class="item-tuong-dat-biet">
+                  <input type="radio" id="tuong-1" name="radio-group" checked>
+                  <label for="tuong-1"><img for="tuong-1" src="./images/tuong-1.jpg" alt="tuong-1"></label>
+                </div>
+                <div class="item-tuong-dat-biet">
+                  <input type="radio" id="tuong-2" name="radio-group">
+                  <label for="tuong-2"><img for="tuong-2" src="./images/tuong-2.jpg" alt="tuong-2"></label>
+                </div>
+                <div class="item-tuong-dat-biet">
+                  <input type="radio" id="tuong-3" name="radio-group">
+                  <label for="tuong-3"><img for="tuong-3" src="./images/tuong-3.jpg" alt="tuong-3"></label>
+                </div>
+                <div class="item-tuong-dat-biet">
+                  <input type="radio" id="tuong-4" name="radio-group">
+                  <label for="tuong-4"><img for="tuong-4" src="./images/tuong-4.jpg" alt="tuong-4"></label>
+                </div>
+                <div class="item-tuong-dat-biet">
+                  <input type="radio" id="tuong-5" name="radio-group">
+                  <label for="tuong-5"><img for="tuong-5" src="./images/tuong-5.jpg" alt="tuong-5"></label>
+                </div>
+              </div>
+              <div class="text-qua-dac-biet">
+                <p>
+                  Chọn 1 trong 5 tướng Miễn phí
+                </p>
+                <p>
+                  Quà tặng sẽ được gửi về hòm thư trong vòng 24h
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="popup-btn">
+            <span data-toggle="modal" data-target="#popup-chuc-mung-doi-qua">Xác nhận</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end doi qua dac biet -->
     <!-- popup chúc mừng đổi quà -->
     <div class="modal" tabindex="-1" role="dialog" id="popup-chuc-mung-doi-qua">
       <div class="modal-dialog popup-container" role="document">
