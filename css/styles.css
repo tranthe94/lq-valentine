@@ -496,7 +496,91 @@ input:focus{
   padding-right: 10%;
   max-width: 100%;
 }
-/* end popup */
+/* popup qua dac viet */
+.list-tuong-dac-biet{
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+}
+.item-tuong-dac-biet {
+  width: 18%;
+  padding: 0px 1%;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 35%;
+  top: 110%;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  background-image: url(../images/vien-radio.png);
+  background-size: 100% 100%;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 18%;
+  height: 18%;
+  background-image: url(../images/check-radio.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 116%;
+  left: 42%;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.item-tuong-dat-biet{
+  width: 20%;
+  float: left;
+  padding: 2%;
+}
+.text-qua-dac-biet{
+  width: 100%;
+  float: left;
+  margin-top: 10%;
+}
+/* end popup qua dac viet */
 /* header */
 header{
   float: left;
