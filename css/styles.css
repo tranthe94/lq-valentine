@@ -506,21 +506,6 @@ input:focus{
   width: 18%;
   padding: 0px 1%;
 }
-/* The container */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default radio button */
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
@@ -581,6 +566,110 @@ input:focus{
   margin-top: 10%;
 }
 /* end popup qua dac viet */
+/* popup banner */
+#popup-banner .popup-container{
+  width: 142.2vh;
+  height: 80vh;
+  margin-top: 10vh;
+  background-image: url(../images/bg-banner-new.jpg);
+}
+.icon-18-plus{
+  width: 1.8%;
+  position: absolute;
+  top: 1.85%;
+  left: 1%;
+}
+.icon-logo-banner{
+  text-align: center;
+}
+.icon-logo-banner img{
+  display: block;
+  margin: 0 auto;
+}
+.logo-lien-quan-banner{
+  padding-top: 5vh!important;
+  width: 5.78%;
+}
+.title-banner-new{
+  width: 47.29%;
+  padding-top: 1vh;
+}
+.line-title-banner-new{
+  width: 17.7%;
+  padding-bottom: 1vh;
+}
+.vao-game-banner{
+  width: 13.64%;
+  -webkit-animation-name: light-banner-btn!important;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: light-banner-btn!important;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes light-banner-btn {
+  0% { -webkit-filter: drop-shadow(0px 0px 5px #2c57af);
+    filter: drop-shadow(0px 0px 5px #2c57af); }
+  50% { -webkit-filter: drop-shadow(0px 0px 0px #2c57af);
+    filter: drop-shadow(0px 0px 0px #2c57af); }
+  100% { -webkit-filter: drop-shadow(0px 0px 5px #2c57af);
+    filter: drop-shadow(0px 0px 5px #2c57af); }
+}
+@keyframes light-banner-btn {
+  0% { -webkit-filter: drop-shadow(0px 0px 5px #2c57af);
+    filter: drop-shadow(0px 0px 5px #2c57af); }
+  50% { -webkit-filter: drop-shadow(0px 0px 0px #2c57af);
+    filter: drop-shadow(0px 0px 0px #2c57af); }
+  100% { -webkit-filter: drop-shadow(0px 0px 5px #2c57af);
+    filter: drop-shadow(0px 0px 5px #2c57af); }
+}
+.icon-su-kien-banner{
+  position: absolute;
+  width: 14%;
+  top: 5vh;
+  right: 5vh;
+}
+.free-tuong-banner{
+  width: 28.28%;
+  position: absolute;
+  left: 13%;
+  bottom: 6.33%;
+}
+.qua-may-man-banner{
+  position: absolute;
+  width: 43.54%;
+  bottom: 6.33%;
+  right: 7.29%;
+}
+.free-tuong-banner img,.qua-may-man-banner img{
+  -webkit-animation-name: light-5px!important;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: light-5px!important;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes light-5px {
+  0% { -webkit-filter: drop-shadow(0px 0px 5px #B127EC);
+    filter: drop-shadow(0px 0px 5px #B127EC); }
+  50% { -webkit-filter: drop-shadow(0px 0px 0px #B127EC);
+    filter: drop-shadow(0px 0px 0px #B127EC); }
+  100% { -webkit-filter: drop-shadow(0px 0px 5px #B127EC);
+    filter: drop-shadow(0px 0px 5px #B127EC); }
+}
+@keyframes light-5px {
+  0% { -webkit-filter: drop-shadow(0px 0px 5px #B127EC);
+    filter: drop-shadow(0px 0px 5px #B127EC); }
+  50% { -webkit-filter: drop-shadow(0px 0px 0px #B127EC);
+    filter: drop-shadow(0px 0px 0px #B127EC); }
+  100% { -webkit-filter: drop-shadow(0px 0px 5px #B127EC);
+    filter: drop-shadow(0px 0px 5px #B127EC); }
+}
+/* end popup banner */
 /* header */
 header{
   float: left;
@@ -1944,5 +2033,57 @@ main{
   #popup-doi-qua .popup-container{
     height: 115vw;
     margin-top: 30%;
+  }
+  #popup-banner .popup-container{
+    width: 100%;
+    height: 86%;
+    margin-top: 10%;
+    background-image: url(../images/bg-banner-new-mb.jpg);
+  }
+  .icon-18-plus{
+    width: 3.52%;
+  }
+  .logo-lien-quan-banner{
+    width: 10.2%;
+    padding-top: 13%!important;
+  }
+  .icon-su-kien-banner{
+    width: 25%;
+    top: 3vh;
+  }
+  .title-banner-new{
+    width: 84%;
+  }
+  .line-title-banner-new{
+    width: 31.48%;
+  }
+  .vao-game-banner{
+    width: 24.25%;
+  }
+  .free-tuong-banner,.qua-may-man-banner{
+    position: relative;
+    margin: 0 auto;
+    left: initial;
+    bottom: initial;
+    right: initial;
+  }
+  .free-tuong-banner{
+    width: auto;
+    height: 29.37%;
+    text-align: center;
+    padding: 3% 0px;
+  }
+  .free-tuong-banner img{
+    height: 100%;
+    width: auto;
+  }
+  .qua-may-man-banner{
+    width: auto;
+    height: 30.26%;
+    text-align: center;
+  }
+  .qua-may-man-banner img{
+    height: 100%;
+    width: auto;
   }
 }

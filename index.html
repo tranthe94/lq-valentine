@@ -342,6 +342,33 @@
       </div>
     </div>
     <!-- end popup chúc mừng đổi quà -->
+    <!-- popup banner -->
+    <div class="modal" tabindex="-1" role="dialog" id="popup-banner">
+      <div class="modal-dialog popup-container" role="document">
+        <img src="./images/icons/close-popup.png" alt="close-popup" class="close-popup" data-dismiss="modal">
+        <div class="popup-content">
+          <div class="icon-18-plus">
+            <img src="./images/18-plus.png" alt="18-plus">
+          </div>
+          <div class="icon-logo-banner">
+            <img src="./images/logo-lien-quan-banner.png" alt="logo-lien-quan-banner" class="logo-lien-quan-banner">
+            <img src="./images/title-banner-new.png" alt="title-banner-new" class="title-banner-new">
+            <img src="./images/line-title-banner-new.png" alt="line-title-banner-new" class="line-title-banner-new">
+            <a href="#"><img src="./images/vao-game-banner.png" alt="vao-game-banner" class="vao-game-banner"></a>
+          </div>
+          <div class="icon-su-kien-banner">
+            <img src="./images/logo-su-kien-banner.png" alt="logo-su-kien-banner" >
+          </div>
+          <div class="free-tuong-banner">
+            <img src="./images/free-tuong-banner.png" alt="free-tuong-banner">
+          </div>
+          <div class="qua-may-man-banner">
+            <img src="./images/qua-may-man-banner.png" alt="qua-may-man-banner">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup banner -->
     <div class="partner">
       <img src="./images/partner.png" alt="partner" class="img-partner">
     </div>
@@ -425,6 +452,8 @@
     function showPage() {
       document.getElementById("loader").style.display = "none";
     }
-    $('#popup-thong-bao').modal('show')
+    $('#popup-thong-bao').modal('show');
+    $('#popup-banner').modal('show');
+    
     </script>
 </body>
